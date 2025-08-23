@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b1120; /* Deep blue-black */
+    color: #e2e8f0; /* Light text */
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Hero section background with subtle animated gradient */
+#about {
+    background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 128, 0, 0.1) 0%, transparent 40%);
+}
+
+/* Section padding for consistency */
+.section-padding {
+    padding: 8rem 1rem;
+}
+
+/* A unique card style for sections */
+.unique-card {
+    background-color: rgb(30 41 59 / 0.5); /* bg-slate-800/50 */
+    padding: 1.5rem 2rem; /* p-6 sm:p-8 */
+    border-radius: 0.75rem; /* rounded-xl */
+    -webkit-backdrop-filter: blur(8px); /* backdrop-blur-md */
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-lg */
+    border: 1px solid #334155; /* border-slate-700 */
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+/* Custom animation for sections - staggered slide-up and fade-in */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: var(--delay);
+}
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes for text typing effect */
+.typing-text {
+    border-right: .15em solid #0ea5e9; /* Blinking cursor */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0ea5e9; }
+}
+
+/* Glow effect on hover for buttons */
+.btn-glow:hover {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.6);
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
