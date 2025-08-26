@@ -1,10 +1,9 @@
 # Personal Portfolio Website — Mukul Anand Singh
 
-![Portfolio Screenshot](https://via.placeholder.com/1200x600.png?text=Your+Portfolio+Screenshot+Here)
 
 A clean, professional, and fully responsive personal portfolio website designed to showcase my skills and expertise as a Data Analyst, Frontend Developer, and Software Support Engineer.
 
-**[➡️ View Live Demo](https://your-live-website-url.com)** _(<- Add your deployment link here!)_
+**[➡️ View Live Demo](https://webfolio5500.netlify.app/)**
 
 ---
 
